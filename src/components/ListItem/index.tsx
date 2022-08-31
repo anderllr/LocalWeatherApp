@@ -37,13 +37,13 @@ const ListItem: FC<Props> = ({description, icon, temp, title, ...props}) => {
           paddingHorizontal: 4 * vw,
           backgroundColor: colors.panel,
         }}>
-        <Text style={{...styles.textBold, width: 30 * vw, fontSize: 3 * vh}}>
+        <Text style={{...styles.textBold, width: 35 * vw, fontSize: 3 * vh}}>
           {title}
         </Text>
         <Text style={{...styles.text, width: 25 * vw, fontSize: 2.5 * vh}}>
           {description}
         </Text>
-        <View style={{width: 20 * vw}}>
+        <View style={{width: 18 * vw}}>
           <Image
             style={{
               width: 10 * vh,
@@ -53,7 +53,7 @@ const ListItem: FC<Props> = ({description, icon, temp, title, ...props}) => {
             source={{uri: icon}}
           />
         </View>
-        <Text style={{...styles.textBold, width: 20 * vw, fontSize: 5 * vh}}>
+        <Text style={{...styles.textBold, width: 15 * vw, fontSize: 5 * vh}}>
           {`${temp}°`}
         </Text>
       </View>

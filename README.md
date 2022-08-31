@@ -53,9 +53,10 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 ## Screenshots
 
-|                                           Current                                            |                                           Tomorrow                                            |                                           NextDays                                            |
-| :------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
-| ![](https://res.cloudinary.com/fabideia/image/upload/v1661919716/samples/Current_p3ctz3.png) | ![](https://res.cloudinary.com/fabideia/image/upload/v1661919716/samples/Tomorrow_pet5c9.png) | ![](https://res.cloudinary.com/fabideia/image/upload/v1661919716/samples/NextDays_ckb3mx.png) |
+| Localização |  
+| Current | Tomorrow | NextDays |
+| :------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
+| ![](https://res.cloudinary.com/fabideia/image/upload/v1661950529/01_jxfpqx.jpg) | ![](https://res.cloudinary.com/fabideia/image/upload/v1661950529/02-today_nxzjgi.jpg) | ![](https://res.cloudinary.com/fabideia/image/upload/v1661950529/03-hours_jxepam.jpg) | ![](https://res.cloudinary.com/fabideia/image/upload/v1661950529/04-days_xfszsi.jpg) |
 
 ## Autores
 

@@ -49,8 +49,8 @@ const Tomorrow: FC = () => {
       ...listweather
         ?.filter(f => f.dtText.includes(tomorrow))
         ?.map((l, index) => {
-          if (index === 0) {
-            //o primeiro registro da lista será o header do dia
+          if (index === 3) {
+            //pega o terceiro registro da lista será o header do dia aproximadamente as 09:00
             setWeather({...l});
           }
           return {
