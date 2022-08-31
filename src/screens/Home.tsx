@@ -1,18 +1,19 @@
 import React, {FC, useEffect, useState} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
+//hooks para utilização global
 import {useAppDispatch, useAppSelector, useColors} from '../lib/hooks';
 
 import {
   fetchCurrentWeather,
   fetchListWeather,
+  Weather,
 } from '../store/weather/sliceWeather';
 
-import {Weather} from '../store/weather/sliceWeather';
+import {IListItem} from '../lib/types';
 import {RootState} from '../store';
 
 import Header from '../components/Header';
-import {IListItem} from '../lib/types';
 
 const Home: FC = () => {
   const [dataList, setDataList] = useState<IListItem[]>([]);

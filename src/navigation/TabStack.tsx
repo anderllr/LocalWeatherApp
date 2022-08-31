@@ -1,3 +1,9 @@
+/**
+ * Component das bottomtabs
+ *
+ * Destaque para o ícone customizado, componente externo.
+ */
+
 import * as React from 'react';
 import {Platform, StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';

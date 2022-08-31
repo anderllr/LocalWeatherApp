@@ -1,3 +1,7 @@
+/**
+ * Busca a localização e atualiza na store para ser utilizado nas três telas
+ */
+
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import * as apiLocation from './apiLocation';
 

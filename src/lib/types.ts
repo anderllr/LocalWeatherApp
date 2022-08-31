@@ -1,3 +1,7 @@
+/**
+ * Guarda de alguns tipos que são usados em vários locais
+ */
+
 export interface ILocation {
   lat: number;
   lon: number;

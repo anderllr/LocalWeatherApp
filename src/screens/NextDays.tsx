@@ -1,9 +1,16 @@
+/**
+ * A API gratuita fornece até 5 dias de 3 em 3 horas ou seja até 40 registros
+ *
+ * Para fazer dos próximos dias filtrei o array de retorno para trazer só os que contenham 0:00:00
+ * pois só tem um para cada um mesmo
+ *
+ * O primeiro registro foi para o cabeçalho
+ */
+
 import React, {FC, useEffect, useState} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
 import {useAppDispatch, useAppSelector, useColors} from '../lib/hooks';
-
-import {dayPlusOneToStr} from '../lib/helpers';
 
 import {fetchListWeather} from '../store/weather/sliceWeather';
 
@@ -15,7 +22,7 @@ import {IListItem} from '../lib/types';
 
 const NextDays: FC = () => {
   const [dataList, setDataList] = useState<IListItem[]>([]);
-  const [weather, setWeather] = useState<Weather | undefined>(undefined);
+  const [weather, setWeather] = useState<Weather>({});
 
   const dispatch = useAppDispatch();
 
@@ -28,6 +35,7 @@ const NextDays: FC = () => {
     if (location?.lat !== 0 && location?.lon !== 0) {
       updateLocalWeather();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [locationState]);
 
   useEffect(() => {
@@ -63,7 +71,7 @@ const NextDays: FC = () => {
 
   return (
     <SafeAreaView style={{...styles.container, backgroundColor: background}}>
-      <Header dataList={dataList} weather={weather} showDetail={true} />
+      <Header dataList={dataList} weather={weather} showDetail={false} />
     </SafeAreaView>
   );
 };

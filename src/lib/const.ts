@@ -10,7 +10,6 @@
 
 import {API_KEY} from '@env';
 
-console.log('API_KEY: ', API_KEY);
 export const apiKey = API_KEY;
 
 export enum Consts {

@@ -1,3 +1,8 @@
+/**
+ * Colocadas todas as views para o caso do app evoluir e precisar navegar entre uma stack e outra
+ * sem a necessidade de utilizar os bottomtabs
+ */
+
 import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 

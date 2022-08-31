@@ -46,12 +46,10 @@ type ListPayload = {
 export const fetchListWeather = createAsyncThunk(
   'fetchListWeather',
   async (payload: ListPayload) => {
-    console.log('list payload: ', payload);
     const response = await apiWeather.fetchListWeather(
       payload.location,
       payload.nrRegistros,
     );
-    console.log('list response: ', response);
     if (response.kind === 'success') {
       return {
         listweather: response.body,
@@ -65,13 +63,11 @@ export const fetchListWeather = createAsyncThunk(
 export const fetchCurrentWeather = createAsyncThunk(
   'fetchCurrentWeather',
   async ({location}: {location: ILocation}) => {
-    console.log('current location: ', location);
     if (!location) {
       throw 'Sem localização!';
     }
     const response = await apiWeather.fetchCurrentWeather(location);
 
-    console.log('current response: ', response);
     if (response.kind === 'success') {
       return {
         weather: response.body,

@@ -1,8 +1,18 @@
+/**
+ * Arquivo com os hooks do app, objetivo de centralizar as tratativas de tipagem
+ * bem como reduzir código em cada tela quando precisar utilizar um hooks
+ *
+ * Destaque aqui para useViewPorts -- objetivo de tratar do dimensionamento dos componentes
+ * independente do dispositivo
+ *
+ * Também para useColors que devolve a paleta de cores e trata se está em darkMode
+ *
+ */
+
 import {useColorScheme, useWindowDimensions} from 'react-native';
 import {TypedUseSelectorHook, useDispatch, useSelector} from 'react-redux';
 import {RootState, AppDispatch} from '../store';
 
-// Use throughout your app instead of plain `useDispatch` and `useSelector`
 export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
